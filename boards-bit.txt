@@ -1,0 +1,37 @@
+## insert into boards.txt
+############################################################
+f407_BlackVET6.name=Black F407VET6
+f407_BlackVET6.build.mcu=STM32F40_41xxx
+f407_BlackVET6.build.series=STM32F4xx
+f407_BlackVET6.build.f_cpu=168000000L
+f407_BlackVET6.build.core=arduino
+f407_BlackVET6.build.extra_flags=
+f407_BlackVET6.build.ldscript=STM32F417IG_FLASH.ld
+f407_BlackVET6.build.variant=f407_BlackVET6
+f407_BlackVET6.build.board=STM32_f407_BlackVET6
+
+# HSE choices
+f407_BlackVET6.build.hse_value=16000000UL
+f407_BlackVET6.build.clksrc=HSE_16M
+f407_BlackVET6.build.isrs=INLINE
+
+# Upload common
+f407_BlackVET6.upload.baud=115200
+f407_BlackVET6.upload.maximum_size=65536
+f407_BlackVET6.upload.tool=stm32ld
+f407_BlackVET6.upload.protocol=serial
+
+# Upload choices
+
+f407_BlackVET6.menu.bootloader.stlink=ST-LINK
+f407_BlackVET6.menu.bootloader.stlink.upload.tool=stlink
+f407_BlackVET6.menu.bootloader.stlink.upload.protocol=stlink
+f407_BlackVET6.menu.bootloader.stlink.upload.options=
+
+f407_BlackVET6.menu.bootloader.mbv2=RTS delay (MBv2)
+# f407_BlackVET6.upload.sequence=-rts,-dtr,dtr:rts,-dtr,dtr
+f407_BlackVET6.menu.bootloader.mbv2.upload.options=rts_trpl_inv
+
+f407_BlackVET6.menu.bootloader.bootbut=Boot button
+f407_BlackVET6.menu.bootloader.bootbut.upload.options=dtr_rts
+#########################################################
